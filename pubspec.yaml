@@ -8,6 +8,7 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  dashbook: ^0.1.13
   flutter:
     sdk: flutter
 
@@ -22,6 +23,9 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
   uses-material-design: true
+
+  exclude:
+    - playground/**
 
   # To add assets to your package, add an assets section, like this:
   # assets:
