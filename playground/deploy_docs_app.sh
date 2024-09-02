@@ -20,7 +20,7 @@ set -e
 log_info "Starting build process..."
 
 # Build the web app
-if flutter build web; then
+if flutter build web --release --base-href /WraFL/; then
     log_success "Build completed successfully and created docs directory!."
 else
     log_error "Build failed. Exiting."
