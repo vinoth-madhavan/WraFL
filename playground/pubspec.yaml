@@ -30,6 +30,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  wrafl:
+    path: ../  # Path to your Wrafl library
+  dashbook: ^0.1.15
 
 
   # The following adds the Cupertino Icons font to your application.
