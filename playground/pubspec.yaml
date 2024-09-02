@@ -32,8 +32,8 @@ dependencies:
     sdk: flutter
   wrafl:
     path: ../  # Path to your Wrafl library
-  dashbook: ^0.1.15
-
+  dashbook: ^0.1.13
+  storybook_flutter: ^0.14.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
