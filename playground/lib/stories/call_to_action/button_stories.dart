@@ -193,6 +193,38 @@ List<Story> wraflButtonStories = [
     },
   ),
   Story(
+    name: 'Call To Action/WraflButton/Disabled',
+    builder: (context) {
+      const backgroundColor = Colors.white;
+      const foregroundColor = Colors.blue;
+
+      return CodeSnippet(
+        code: '''WraflButton(
+          label: 'Searching...',
+          backgroundColor: backgroundColor,
+          textColor: foregroundColor,
+          disabled: true,
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(content: Text('Button Pressed!')),
+            );
+          },
+        )''',
+        child: WraflButton(
+          label: 'Searching...',
+          backgroundColor: backgroundColor,
+          textColor: foregroundColor,
+          disabled: true,
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(content: Text('Button Pressed!')),
+            );
+          },
+        ),
+      );
+    },
+  ),
+  Story(
     name: 'Call To Action/WraflButton/Right Icon',
     builder: (context) {
       const backgroundColor = Colors.white;

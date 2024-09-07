@@ -1,6 +1,7 @@
 # Running the Playground
 
 ```
+cd playground
 flutter run -t playground/lib/main.dart
 flutter run -d chrome
 ```

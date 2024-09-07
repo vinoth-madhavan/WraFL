@@ -19,7 +19,7 @@ class CodeSnippet extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(height: 20),
+        const SizedBox(height: 50),
         Center(child: child), // Center the child widget
         const SizedBox(height: 100),
         const Center(

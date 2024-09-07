@@ -8,9 +8,9 @@ class WraflButton extends StatelessWidget {
   final Color? textColor;
   final Widget? leftIcon;
   final Widget? rightIcon;
-  final bool? hideLabel;
-  final bool? disabled;
-  final bool? showSpinner;
+  final bool hideLabel;
+  final bool disabled;
+  final bool showSpinner;
   final VoidCallback onPressed;
 
   const WraflButton({
@@ -35,7 +35,7 @@ class WraflButton extends StatelessWidget {
         foregroundColor:
             textColor ?? Colors.white, // Default text color if null
       ),
-      onPressed: onPressed,
+      onPressed: disabled ? null : onPressed,
       child: Row(
         mainAxisSize: MainAxisSize.min, // Make the button shrink to fit content
         children: [
