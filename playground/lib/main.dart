@@ -5,7 +5,7 @@ import 'package:storybook_flutter/storybook_flutter.dart';
 
 // Call to Action - Stories
 import 'package:playground/stories/call_to_action/button_stories.dart';
-
+import 'package:playground/stories/call_to_action/floating_button_stories.dart';
 void main() {
   runApp(const PlaygroundApp());
 }
@@ -36,6 +36,7 @@ class StorybookWidget extends StatelessWidget {
     return Storybook(
       stories: [
         ...wraflButtonStories, // WraflButton Stories.
+        ...wraflFloatingButtonStories, // WraflFloatingButton Stories.
       ],
     );
   }
