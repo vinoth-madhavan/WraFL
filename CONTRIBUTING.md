@@ -2,14 +2,15 @@
 
 ```
 cd playground
-flutter run -t playground/lib/main.dart
+# Optional - flutter run -t playground/lib/main.dart
 flutter run -d chrome
 ```
 
-## Publish Web App
+## Generate Web App with Latest Widget Changes
 
 ```
 cd playground
 chmod +x deploy_docs_app.sh
-./deploy_docs_app.sh # Run the Script
+# Run the Script
+./deploy_docs_app.sh 
 ```
