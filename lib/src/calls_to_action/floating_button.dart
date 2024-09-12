@@ -7,6 +7,7 @@ class WraflFloatingButton extends StatelessWidget {
   final Color? backgroundColor;
   final Color? foregroundColor;
   final ShapeBorder? shape;
+  final AlignmentGeometry alignment;
 
   const WraflFloatingButton({
     Key? key,
@@ -15,18 +16,23 @@ class WraflFloatingButton extends StatelessWidget {
     this.backgroundColor,
     this.foregroundColor,
     this.shape,
-    this.child, // Include `child` in the constructor
+    this.child,
+    this.alignment = Alignment.bottomRight,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return FloatingActionButton(
-      onPressed: onPressed,
-      tooltip: tooltip,
-      backgroundColor: backgroundColor ?? Theme.of(context).primaryColor,
-      foregroundColor: foregroundColor ?? Colors.white,
-      shape: shape ?? const CircleBorder(),
-      child: child ?? const Text('Unnamed'),
+  
+    return Align(
+      alignment: alignment,
+      child: FloatingActionButton(
+        onPressed: onPressed,
+        tooltip: tooltip,
+        backgroundColor: backgroundColor ?? Theme.of(context).primaryColor,
+        foregroundColor: foregroundColor ?? Colors.white,
+        shape: shape ?? const CircleBorder(),
+        child: child ?? const Text('Unnamed'),
+      ),
     );
   }
 }

@@ -6,6 +6,7 @@ import 'package:storybook_flutter/storybook_flutter.dart';
 // Call to Action - Stories
 import 'package:playground/stories/call_to_action/button_stories.dart';
 import 'package:playground/stories/call_to_action/button_group_stories.dart';
+import 'package:playground/stories/call_to_action/floating_button_stories.dart';
 import 'package:playground/stories/communications/icon_stories.dart';
 
 void main() {
@@ -38,8 +39,9 @@ class StorybookWidget extends StatelessWidget {
     return Storybook(
       stories: [
         ...wraflButtonStories, // WraflButton Stories.
-        ...wraflIconStories, // WraflIcon Stories.
         ...wraflButtonGroupStories, // WraflButtonGroup Stories.
+        ...wraflFloatingButtonStories, // WraflFloatingButton Stories.
+        ...wraflIconStories, // WraflIcon Stories.
       ],
     );
   }
