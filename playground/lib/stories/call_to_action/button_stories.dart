@@ -258,4 +258,64 @@ List<Story> wraflButtonStories = [
       );
     },
   ),
+  Story(
+    name: 'Call To Action/WraflButton/Outlined',
+    builder: (context) {
+      const backgroundColor = Colors.white;
+      const foregroundColor = Colors.blue;
+
+      return CodeSnippet(
+        code: '''WraflButton(
+          label: 'Actions',
+          backgroundColor: backgroundColor,
+          textColor: foregroundColor,
+          variant: WraFLButtonVariant.outlined,
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(content: Text('Button Pressed!')),
+            );
+          },
+        )''',
+        child: WraflButton(
+          label: 'Actions',
+          backgroundColor: backgroundColor,
+          textColor: foregroundColor,
+          variant: WraFLButtonVariant.outlined,
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(content: Text('Button Pressed!')),
+            );
+          },
+        ),
+      );
+    },
+  ),
+  Story(
+    name: 'Call To Action/WraflButton/Text',
+    builder: (context) {
+      const foregroundColor = Colors.purple;
+      return CodeSnippet(
+        code: '''WraflButton(
+          label: 'Actions',
+          textColor: foregroundColor,
+          variant: WraFLButtonVariant.text,
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(content: Text('Button Pressed!')),
+            );
+          },
+        )''',
+        child: WraflButton(
+          label: 'Actions',
+          textColor: foregroundColor,
+          variant: WraFLButtonVariant.text,
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(content: Text('Button Pressed!')),
+            );
+          },
+        ),
+      );
+    },
+  ),
 ];
