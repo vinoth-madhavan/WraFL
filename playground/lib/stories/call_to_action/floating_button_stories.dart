@@ -39,7 +39,7 @@ List<Story> wraflFloatingButtonStories = [
     },
   ),
   Story(
-    name: 'Call To Action/WraflFloatingButton/Top Left',
+    name: 'Call To Action/WraflFloatingButton/Alignment',
     builder: (context) {
       return CodeSnippet(
         code: 
@@ -50,7 +50,7 @@ List<Story> wraflFloatingButtonStories = [
                 const SnackBar(content: Text('Button Pressed!')),
               );
             },
-            tooltip: 'Top Left Button',
+            tooltip: 'Alignment',
             child: Icon(FontAwesomeIcons.plus),
             alignment: Alignment.topLeft,
         )
@@ -61,7 +61,7 @@ List<Story> wraflFloatingButtonStories = [
                 const SnackBar(content: Text('Button Pressed!')),
               );
             },
-            tooltip: 'Top Left Button',
+            tooltip: 'Alignment',
             child: Icon(FontAwesomeIcons.plus),
             alignment: Alignment.topLeft,
         ),
